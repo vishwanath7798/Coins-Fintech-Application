@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection{
+    background: var(--green);
+    color: white;
+}
+
+body{
+    background-color: rgb(243, 234, 234);
+}
+header{
+    width: 98%;
+    background: white;
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    transition: .2s;
+}
+
+.header-active{
+    top: 0;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 0 .1tem .3rem rgba(0, 0, 0, .3);
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .navbar ul li{
+    margin: 0 1rem;
+}
+
+header .navbar ul li a{
+    font-size: 1.2rem;
+    color: black;
+    transition: .2s;
+}
+
+header .navbar ul li .active,
+header .navbar ul li a:hover{
+    color: orange;
+}
+
+header .logo{
+    font-size: 2.5rem;
+    color: orange;
+    text-transform: uppercase;
+}
+
+header .logo i{
+    color: orange;
+    padding: 0 .2rem;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: orange;
+    cursor: pointer;
+    display: none;
+    transition: .2s;
+}
+
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 160px 0 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero .issue-wrapper {
+    position: relative;
+    z-index: 3;
+  }
+  .hero h2 {
+    color: rgb(226, 191, 124);
+    margin: 0;
+    font-size: 44px;
+    font-weight: 700;
+  }
+  
+  .hero p {
+    color: rgb(116, 50, 100);
+    margin: 5px 0 0 0;
+    font-size: 20px;
+  }
+  
+  .hero .sign-up-form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    background: #fff;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+  }
+  .hero .sign-up-form .form-control {
+    border: none;
+  }
+  
+  .hero .sign-up-form .form-control:active,
+  .hero .sign-up-form .form-control:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .hero .sign-up-form input[type=submit] {
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+    background-color: orange;
+    border-color: rgb(212, 125, 125);
+    padding: 8px 20px 10px 20px;
+    border-radius: 7px;
+    color: white;
+  }
+  
+  .hero .sign-up-form input[type=submit]:hover {
+    background-color: pink;
+  }
+
+  @media (max-width:768px){
+    html{
+        font-size: 55%;
+    }
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: fixed;
+        top: -100rem;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 1rem;
+        opacity: 0;
+        transition: .2s linear;
+    }
+
+    header .navbar ul{
+        flex-flow: column;
+        padding: 2rem 0 ;
+    }
+
+    header .navbar ul li{
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .navbar ul li a{
+        font-size: 3rem;
+        display: block;
+    }
+
+    header .nav-toggle{
+        top: 5.5rem;
+        opacity: 1;
+    }
+    .hero h2 {
+        font-size: 32px;
+      }
+    
+      .hero p {
+        font-size: 18px;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
